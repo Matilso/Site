@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--meta - informações ao navegador-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Matheus">
+    <meta name="assunto" content="Formulário Pesquisa">
+    <title>Página sobre Rock Nacional</title>
+    <link rel="shortcut icon" href="Img/rock-and-roll.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+    <h1>Página 2 - Formulário de Pesquisa🎸</h1>
+
+    <h1>Home - Rock no Brasil 🤘🗿</h1>
+    
+    <!--Menu de navegação-->
+    <nav>
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="fotos.html">Foto da história do rock</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+</header>
+    
+
+<main>
+    <h2>Preencha o formulário:</h2>
+
+
+    <form action="/submit-from">
+        <fieldset>
+            <legend>informações Gerais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="informe seu nome" autofocus><br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="text" name="email" id="email" placeholder="informe seu e-mail"><br><br>
+
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="date" name="date" id="dataNascimento"><br><br>
+
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade" id="idade" min="12" max="100" placeholder="Idade"><br><br>
+
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Informaçoes sobre a banda favorita</legend><br>
+
+            <label for="banda-favorita">Qual é a sua banda favorita?</label>
+            <input type="text" name="banda-favorita" id="banda-favorita" placeholder="capital inicial"><br><br>
+
+            <p>Qual é o seu gênero de rock favorito?</p><br>
+            <select name="genero-favorito">
+                <option value="rock">Rock</option>
+                <option value="alternativo">Alternativo</option>
+                <option value="classico">Clássico</option>
+                <option value="pink">Pink</option>
+                <option value="metal">Metal</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <p>Qual é a sua plataforma de streaming de música favorita?</p>
+            <input type="radio" name="plataformas" id="spotify">
+            <label for="spotify">Spotify</label>
+
+            <input type="radio" name="plataformas" id="deezer">
+            <label for="deezer">Deezer</label>
+
+            <input type="radio" name="plataformas" id="Applemusic">
+            <label for="Applemusic">Applemusic</label>
+
+            <p>Qual dessas bandas de Rock Nacional você conhece?</p>
+
+             <input type="checkbox" name="Bandas" id="legiaoUrbana" value="legiaoUrbana">
+             <label for="legiaoUrbana">Legião Urabana</label><br>
+
+             <input type="checkbox" name="Bandas" id="titas" value="titas">
+             <label for="titas">Titãs</label><br>
+
+             <input type="checkbox" name="Bandas" id="paralamas" value="paralamas">
+             <label for="paralamas">Paralamas</label><br>
+
+             <input type="checkbox" name="Bandas" id="capitalinicial" value="capitalinicial">
+             <label for="capitalinicial">capitalinicial</label><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Participe da nossa galeria de Fotos</legend>
+            <p>Envie sua foto em um show para adicionarmos em nossa Galeria!</p>
+
+            <input type="file" name="anexoFoto" id="anexoFoto"><br><br>
+
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Escreva a Legenda de sua foto aqui..."></textarea>
+            <br><br>
+        </fieldset>
+        <br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+
+    </form>
+    <br><br>
+</main>
+<p><a href="formulário.html">Voltar ao topo</a></p>
+
+
+<!-- Rodapé da página-->
+<footer>
+    <p>&lt; &copy; copyright - App - Rock Nacional</p>
+
+    </footer>
+
+</body>
+</html>
